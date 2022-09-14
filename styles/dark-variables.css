@@ -1,4 +1,4 @@
-:root {
+[data-theme="dark"] {
         --ui-theme-bg-default: var(--ui-colors-black, #171717);
   --ui-theme-bg-subtle: var(--ui-colors-grey-900, #323232);
   --ui-theme-bg-muted: var(--ui-colors-grey-600, #757575);

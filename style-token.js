@@ -100,7 +100,7 @@ function getConfigTailwindFilesByType(typeList) {
 
 // HAVE THE STYLE DICTIONARY CONFIG DYNAMICALLY GENERATED
 function getStyleDictionaryConfig(tokensConfig = {}) {
-  const { brand, buildTailwindFiles, tokens } = tokensConfig;
+  const { brand, buildTailwindFiles, tokens, selectorName } = tokensConfig;
 
   let configTailwindFilesByType = [];
 
@@ -121,7 +121,7 @@ function getStyleDictionaryConfig(tokensConfig = {}) {
           {
             destination: `${brand}-variables.css`,
             format: "css/variables",
-            selectorName: ":root",
+            selectorName: selectorName,
           },
           ...configTailwindFilesByType,
         ],
@@ -137,16 +137,19 @@ const configs = [
   {
     brand: "global",
     buildTailwindFiles: true,
+    selectorName: ":root",
     tokens: convertFigmaExportReferenceToStyleDictionaryReference(global),
   },
   {
     brand: "light",
     buildTailwindFiles: true,
+    selectorName: '[data-theme="light"]',
     tokens: convertFigmaExportReferenceToStyleDictionaryReference(light),
   },
   {
     brand: "dark",
     buildTailwindFiles: true,
+    selectorName: '[data-theme="dark"]',
     tokens: convertFigmaExportReferenceToStyleDictionaryReference(dark),
   },
 ];
