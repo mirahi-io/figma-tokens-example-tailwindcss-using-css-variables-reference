@@ -1,26 +1,26 @@
 <script lang="ts" setup>
-import "./assets/css/main.css";
+import './assets/css/main.css'
 
-const isDark = ref(false);
+const isDark = ref(false)
 
 const toggleDarkMode = () => {
-  isDark.value = !isDark.value;
-  if (isDark.value) {
-    document.documentElement.setAttribute("data-theme", "dark");
-  } else {
-    document.documentElement.setAttribute("data-theme", "light");
-  }
-};
+  isDark.value = !isDark.value
+  if (isDark.value)
+    document.documentElement.setAttribute('data-theme', 'dark')
+  else
+    document.documentElement.setAttribute('data-theme', 'light')
+}
 
 const buttonLabel = computed(() => {
-  return isDark.value ? "Sun" : "Dark";
-});
+  return isDark.value ? 'Sun' : 'Dark'
+})
 </script>
+
 <template>
   <div class="text-fg-default bg-bg-default">
     <button
-      @click="toggleDarkMode"
       class="h-10 px-6 font-semibold rounded-md bg-bg-default text-fg-default border-solid border-fg-default border-2"
+      @click="toggleDarkMode"
     >
       {{ buttonLabel }}
     </button>

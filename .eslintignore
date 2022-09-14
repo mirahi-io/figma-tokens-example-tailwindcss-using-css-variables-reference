@@ -1,0 +1,7 @@
+dist
+public
+styles
+
+# ignore generate imports
+auto-imports.d.ts
+components.d.ts

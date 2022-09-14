@@ -1,6 +1,8 @@
 {
   "private": true,
   "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "build": "nuxt build",
     "build-transform-global": "npx token-transformer tokens.json styles/tokens/global.json global",
     "build-transform-light": "npx token-transformer tokens.json styles/tokens/light.json global,light,theme --resolveReferences=false",
@@ -14,7 +16,9 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^0.26.3",
     "@nuxtjs/tailwindcss": "^5.3.3",
+    "eslint": "^8.23.1",
     "nuxt": "3.0.0-rc.9",
     "style-dictionary": "^3.7.1"
   }
