@@ -20,6 +20,7 @@
     "@nuxtjs/tailwindcss": "^5.3.3",
     "eslint": "^8.23.1",
     "nuxt": "3.0.0-rc.9",
+    "nuxt-icon": "^0.1.5",
     "style-dictionary": "^3.7.1"
   }
 }

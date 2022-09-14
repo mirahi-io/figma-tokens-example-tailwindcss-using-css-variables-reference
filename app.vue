@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import './assets/css/main.css'
 
-const isDark = ref(false)
+const isDark = ref(true)
 
 const toggleDarkMode = () => {
   isDark.value = !isDark.value
@@ -22,6 +22,8 @@ const buttonLabel = computed(() => {
       class="h-10 px-6 font-semibold rounded-md bg-bg-default text-fg-default border-solid border-fg-default border-2"
       @click="toggleDarkMode"
     >
+      <Icon v-if="isDark" name="heroicons-outline:sun" />
+      <Icon v-else name="heroicons-outline:moon" />
       {{ buttonLabel }}
     </button>
   </div>
