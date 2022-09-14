@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require("./styles/tw-extend/color");
+
 module.exports = {
   content: [
     `components/**/*.{vue,js}`,
@@ -10,7 +12,7 @@ module.exports = {
     `app.{js,ts,vue}`,
   ],
   theme: {
-    extend: {},
+    extend: { colors },
   },
   plugins: [],
 };
