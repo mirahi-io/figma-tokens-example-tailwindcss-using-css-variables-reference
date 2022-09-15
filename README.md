@@ -1,10 +1,8 @@
-# figma-tokens-example-tailwindcss-using-variable-reference
+# figma-tokens-example-tailwindcss-using-css-variable-reference
 
-This repository was created as part of a blogpost on the Mirahi Digital Garden.
+This repository was created as part of a blogpost on the [Mirahi Digital Garden](https://garden.mirahi.io/).
 
-We will explain how you can transform your tokens stored on [Figma Tokens](https://github.com/six7/figma-tokens) to be automatically transformed with token-transformer and Style Dictionary to a TailwindCSS environment with multiple themes.
-
-
+We will explain how you can transform your tokens stored on [Figma Tokens](https://github.com/six7/figma-tokens) to be automatically transformed with [token-transformer]() and [Style Dictionary](https://github.com/amzn/style-dictionary) to a [TailwindCSS](https://github.com/tailwindlabs/tailwindcss) environment with multiple themes.
 
 ## Setup
 
@@ -35,7 +33,7 @@ You can find [other examples here](https://github.com/six7/figma-tokens-examples
 
 ## 💖 Credits
 
-This projet use [style-dictionary](https://github.com/amzn/style-dictionary), [token-transformer](https://github.com/six7/figma-tokens/tree/main/token-transformer), [NuxtJS](https://github.com/nuxt/framework), [@nuxtjs/tailwindcss](https://github.com/nuxt-modules/tailwindcss), [nuxt-icons](https://github.com/nuxt-modules/icon)
+This project uses [style-dictionary](https://github.com/amzn/style-dictionary), [token-transformer](https://github.com/six7/figma-tokens/tree/main/token-transformer), [TailwindCSS](https://github.com/tailwindlabs/tailwindcss), [NuxtJS](https://github.com/nuxt/framework), [@nuxtjs/tailwindcss](https://github.com/nuxt-modules/tailwindcss), [nuxt-icons](https://github.com/nuxt-modules/icon)
 
 ## License
 
