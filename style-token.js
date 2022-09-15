@@ -4,32 +4,13 @@ const light = require('./styles/tokens/light.json')
 const dark = require('./styles/tokens/dark.json')
 
 const supportedTokenTypeList = [
-  'colors',
-  'boxShadow',
-  'sizing',
   'color',
-  'borderRadius',
-  'borderWidth',
-  'opacity',
-  'fontFamilies',
 ]
 
 const formatValue = (tokenType, value) => {
   let formattedValue
   switch (tokenType) {
-    case 'boxShadow':
-      /*
-       * offset-x | offset-y | blur-radius | spread-radius | color
-       * box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-       */
-      formattedValue = `${value.x} ${value.y} ${value.blur} ${value.spread} ${value.color}`
-      break
-    case 'sizing':
     case 'color':
-    case 'borderRadius':
-    case 'borderWidth':
-    case 'opacity':
-    case 'fontFamilies':
     default:
       formattedValue = value
   }
@@ -141,16 +122,16 @@ const configs = [
     tokens: convertFigmaExportReferenceToStyleDictionaryReference(global),
   },
   {
-    brand: 'light',
-    buildTailwindFiles: true,
-    selectorName: '[data-theme="light"]',
-    tokens: convertFigmaExportReferenceToStyleDictionaryReference(light),
-  },
-  {
     brand: 'dark',
     buildTailwindFiles: true,
     selectorName: '[data-theme="dark"]',
     tokens: convertFigmaExportReferenceToStyleDictionaryReference(dark),
+  },
+  {
+    brand: 'light',
+    buildTailwindFiles: true,
+    selectorName: '[data-theme="light"]',
+    tokens: convertFigmaExportReferenceToStyleDictionaryReference(light),
   },
 ]
 

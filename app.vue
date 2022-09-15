@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import './assets/css/main.css'
 
-const isDark = ref(true)
+const isDark = ref(false)
 
 const toggleDarkMode = () => {
   isDark.value = !isDark.value
