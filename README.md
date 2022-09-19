@@ -1,6 +1,6 @@
-# Figma-tokens : example-tailwindcss-using-css-variables-reference
+# Figma-tokens : example tailwindcss using css variables reference
 
-This repository was created as part of a blogpost on the [Mirahi Digital Garden](https://garden.mirahi.io/).
+This repository was created as part of a blogpost on the [Mirahi Digital Garden](https://garden.mirahi.io/how-to-use-the-color-tokens-from-your-design-system-directly-in-tailwind-css/).
 
 We will explain how you can transform your tokens stored on [Figma Tokens](https://github.com/six7/figma-tokens) using [token-transformer](https://github.com/six7/figma-tokens/tree/main/token-transformer) and [Style Dictionary](https://github.com/amzn/style-dictionary) to css-variables with references, and use them in your [TailwindCSS](https://github.com/tailwindlabs/tailwindcss) environment with multiple themes.
 
